@@ -1,0 +1,41 @@
+
+.CreateaReview{
+    background-image: url("https://images8.alphacoders.com/892/thumb-1920-892271.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    font-family: 'Courier New', Courier, monospace; 
+   
+}
+
+
+.contain{
+    border-style:solid;
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    text-align: center;
+    background-color: rgb(122, 182, 199);
+    margin: auto;
+      
+   
+
+   
+    
+
+}
+.h1{
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;  
+    color: white
+    
+}
+
+
+
+.attractionReview{ 
+    font-family: 'Courier New', Courier, monospace; 
+   }
+

@@ -1,0 +1,35 @@
+.top{
+    border-style: solid;
+    border-color: rgb(122, 182, 199);
+    background-color: rgb(122, 182, 199);
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;   
+}
+
+.sign{
+    width: 400px;
+    padding:5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+    background-color:  rgb(122, 182, 199);
+    width: 500px;
+    margin:auto
+}
+
+.button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(41, 83, 95);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

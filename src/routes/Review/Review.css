@@ -1,0 +1,30 @@
+
+.Review{
+    background-color: rgb(122, 182, 199);
+    text-align: center;
+}
+
+
+.title{
+    border-style:solid;
+    padding-top: 10px;   
+    text-align: center;
+    box-shadow: 5px 10px;
+    margin: auto;
+    background-color: white;
+
+}
+.ride{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.nameReview{
+    border: solid;
+}
+
+
+.owner{
+   
+    visibility: hidden;
+}

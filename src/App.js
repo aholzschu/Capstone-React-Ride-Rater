@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { Outlet } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
+import Navigation from "./routes/NavBar/NavBar"
+import Home from "./routes/Home/Home"
+import SignIn from './routes/Sign-in/Sign-in';
+import SignUp from './routes/Signup/Signup'
+import Review from './routes/Review/Review';
+import CreateaReview from './routes/Createareview/Createareview';
+import Rides from './routes/Rides/rides';
+
+// semantic ui react 2.1.4
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<Navigation/>}>
+        <Route path='rides' element={<Rides/>}/>
+        <Route path='review' element={<Review/>}/>
+        <Route path='createaReview' element={<CreateaReview/>}/>
+        <Route path='home' element={<Home/>}/>
+        <Route path='sign-in' element={<SignIn/>}/>
+        <Route path='sign-up' element={<SignUp/>}/>
+
+      </Route>
+    </Routes>
+      
+  )
 }
 
 export default App;
