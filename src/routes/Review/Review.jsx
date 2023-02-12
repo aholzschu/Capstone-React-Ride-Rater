@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import { Reviewer } from '../../components/RC/RC';
-
 import { Container } from 'semantic-ui-react';
 
 
@@ -18,7 +17,7 @@ function Review() {
     console.log(reviews);
     return(
       <div className="Review">
-      
+    
       <Container className='Container'>
         <Reviewer reviews={reviews}/>
       </Container>

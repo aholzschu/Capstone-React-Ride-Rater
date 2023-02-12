@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Header, Rating, Grid,} from "semantic-ui-react"
+import { List, Header, Rating, Grid, Button} from "semantic-ui-react"
 
 
 
@@ -18,11 +18,13 @@ export const Reviewer = ({reviews}) =>{
                <Grid columns={0} >
                <Grid.Row >
                <Grid.Column>
-               <List.Item className='title' key ={review.attraction_name}>
+               <List.Item className='title' key = {review.attraction_name}>
                <Header className='ride'>{review.attraction_name}</Header>
                <Header className='practice'>{review.user_review}</Header>
                <Header>{review.name}</Header>
                <Rating icon='star' size ='large' rating={review.rating} maxRating={5} disabled/>
+               <br></br>
+               <br></br>
                </List.Item>
                </Grid.Column>
                </Grid.Row>

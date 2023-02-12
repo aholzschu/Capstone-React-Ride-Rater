@@ -1,7 +1,7 @@
 .navbar{
     background-color: rgb(122, 182, 199);
     font-family: 'Courier New', Courier, monospace;
-    height: 70px;
+    height: 5rem;
     display: flex;  
     
 }
@@ -25,5 +25,13 @@
     padding: .8em;
     color:  rgb(122, 182, 199);
   }
+
+  .me-auto-1{
+    padding: 2em;
+    font-size: large;
+    
+  }
+
+  
 
 

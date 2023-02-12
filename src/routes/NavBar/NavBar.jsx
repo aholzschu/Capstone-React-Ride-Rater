@@ -1,9 +1,22 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
+import { firebaseAuth } from '../../utils/firebase/firebase';
+import { onAuthStateChanged } from "firebase/auth";
+import { signOut } from "firebase/auth";
+import { BiLogOut } from "react-icons/bi"
 import './NavBar.css';
 
+
 function ColorSchemesExample() {
+  
+const navigate = useNavigate();
+
+
+onAuthStateChanged(firebaseAuth, (currentUser) => {
+  if (!currentUser) navigate("/login");
+  });
+  
   return (
     <>
       <Navbar>
@@ -21,8 +34,9 @@ function ColorSchemesExample() {
             <Nav.Link href="/Review">Reviews</Nav.Link>
           </Nav>
           <Nav className="me-auto-1">
-            <Nav.Link className='login' href="/Sign-in">Login</Nav.Link>
-            <Nav.Link className='login' href="/Sign-up">Sign-up</Nav.Link>
+            <Nav.Link className='signout' onClick={() => signOut(firebaseAuth)}>
+            <BiLogOut/> 
+            </Nav.Link>      
           </Nav>
       </Navbar>
             <Outlet/>

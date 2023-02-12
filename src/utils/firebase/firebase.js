@@ -67,3 +67,6 @@ export const createSignup = async (email, password) => {
         return await createUserWithEmailAndPassword(auth, email, password)
     }
 }
+
+
+export const firebaseAuth = getAuth(app);
